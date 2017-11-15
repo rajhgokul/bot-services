@@ -1,6 +1,8 @@
 package com.poc.bot.controller;
 
 import com.poc.bot.model.TokenRequest;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,8 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class BotController {
 
-    @GetMapping("/v1/.well-known/openidconfiguration")
-    public ResponseEntity retrieveCoursesForStudent() {
+    Logger log = LogManager.getLogger(BotController.class);
+
+    @GetMapping(value = "/v1/.well-known/openidconfiguration", produces = "application/json")
+    public ResponseEntity getOpenIdConfiguration() {
+        log.info("Inside getOpenIdConfiguration method");
         return ResponseEntity.ok("{\n" +
                 "    \"issuer\": \"https://api.botframework.com\",\n" +
                 "    \"authorization_endpoint\": \"https://invalid.botframework.com\",\n" +
@@ -25,8 +30,9 @@ public class BotController {
                 "}");
     }
 
-    @GetMapping("/v1/.well-known/keys")
-    public ResponseEntity retrieveDetailsForCourse() {
+    @GetMapping(value = "/v1/.well-known/keys", produces = "application/json")
+    public ResponseEntity getWellKnownKeys() {
+        log.info("Inside getWellKnownKeys method");
         return ResponseEntity.ok("{\n" +
                 "    \"keys\": [\n" +
                 "        {\n" +
@@ -188,8 +194,9 @@ public class BotController {
                 "}");
     }
 
-    @PostMapping(value = "/botframework.com/oauth2/v2.0/token", consumes = "multipart/form-data")
-    public ResponseEntity registerStudentForCourse() {
+    @PostMapping(value = "/botframework.com/oauth2/v2.0/token", consumes = "multipart/form-data", produces = "application/json")
+    public ResponseEntity getToken() {
+        log.info("Inside getToken method");
         return ResponseEntity.ok("{\n" +
                 "    \"token_type\": \"Bearer\",\n" +
                 "    \"expires_in\": 3599,\n" +
