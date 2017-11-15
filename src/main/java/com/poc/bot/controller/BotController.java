@@ -188,8 +188,8 @@ public class BotController {
                 "}");
     }
 
-    @PostMapping("/botframework.com/oauth2/v2.0/token")
-    public ResponseEntity registerStudentForCourse(@RequestBody TokenRequest request) {
+    @PostMapping(value = "/botframework.com/oauth2/v2.0/token", consumes = "multipart/form-data")
+    public ResponseEntity registerStudentForCourse() {
         return ResponseEntity.ok("{\n" +
                 "    \"token_type\": \"Bearer\",\n" +
                 "    \"expires_in\": 3599,\n" +
