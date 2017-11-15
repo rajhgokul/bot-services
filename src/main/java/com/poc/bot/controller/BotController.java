@@ -198,10 +198,10 @@ public class BotController {
     public ResponseEntity getToken() {
         log.info("Inside getToken method");
         return ResponseEntity.ok("{\n" +
-                "    \"token_type\": \"Bearer\",\n" +
-                "    \"expires_in\": 3599,\n" +
-                "    \"ext_expires_in\": 0,\n" +
-                "    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJLVmN1enFBaWRPTHFXU2FvbDd3Z0ZSR0NZbyIsImtpZCI6IjJLVmN1enFBaWRPTHFXU2FvbDd3Z0ZSR0NZbyJ9.eyJhdWQiOiJodHRwczovL2FwaS5ib3RmcmFtZXdvcmsuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZDZkNDk0MjAtZjM5Yi00ZGY3LWExZGMtZDU5YTkzNTg3MWRiLyIsImlhdCI6MTUxMDcyMjUyMSwibmJmIjoxNTEwNzIyNTIxLCJleHAiOjE1MTA3MjY0MjEsImFpbyI6IlkyTmdZRmhxeEtWV0VieGd5K21reVlhOE8vc1hBZ0E9IiwiYXBwaWQiOiI0OGY1ZDBkNy04MDRlLTQyZTUtOTZmMi1mNTllZDhiNmNlMjQiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9kNmQ0OTQyMC1mMzliLTRkZjctYTFkYy1kNTlhOTM1ODcxZGIvIiwidGlkIjoiZDZkNDk0MjAtZjM5Yi00ZGY3LWExZGMtZDU5YTkzNTg3MWRiIiwidmVyIjoiMS4wIn0.4XLGmo9GPoNCUsDu64NsC-RHtUNWJNQraP1bR2_1qM2GfdxRpe-aMYtWxHy6gk39AhOqIvGu6VTdkkD7zET55hjGgp12Hs4MmBFFLgSUEwbkqN_TUVVf77ssSf4W1xkoS_EyuQMc1yXX0IXFQHraGiUp8RIdFVuQnGmnp-8cGN0MjsdukNsLiPjOgfG9S4szKvfGReLbZu2ZzC60Njw-SLEcj5Iz8d-3yRvV2R8ym6ArRnX44eg7OLgMR5Ztc2X_Otm5qBPXyYaeXDA1tcOyvYkkHFIO9erCnQjHookvd4vpsJlrYSpYuF_y8MP2Tt0IQaFXdqw0QCZSKFFCG4qJBw\"\n" +
+                "\t\"token_type\": \"Bearer\",\n" +
+                "\t\"expires_in\": 3599,\n" +
+                "\t\"ext_expires_in\": 0,\n" +
+                "\t\"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJLVmN1enFBaWRPTHFXU2FvbDd3Z0ZSR0NZbyIsImtpZCI6IjJLVmN1enFBaWRPTHFXU2FvbDd3Z0ZSR0NZbyJ9.eyJhdWQiOiJodHRwczovL2FwaS5ib3RmcmFtZXdvcmsuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZDZkNDk0MjAtZjM5Yi00ZGY3LWExZGMtZDU5YTkzNTg3MWRiLyIsImlhdCI6MTUxMDczNjUyNSwibmJmIjoxNTEwNzM2NTI1LCJleHAiOjE1MTA3NDA0MjUsImFpbyI6IlkyTmdZSGlXeXYrbThJQnpoR3lOVlp1SjRWY09BQT09IiwiYXBwaWQiOiI0OGY1ZDBkNy04MDRlLTQyZTUtOTZmMi1mNTllZDhiNmNlMjQiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9kNmQ0OTQyMC1mMzliLTRkZjctYTFkYy1kNTlhOTM1ODcxZGIvIiwidGlkIjoiZDZkNDk0MjAtZjM5Yi00ZGY3LWExZGMtZDU5YTkzNTg3MWRiIiwidmVyIjoiMS4wIn0.P7vXX8Vs7N9iOkkUCRMpxcR40yaSs3DY4VVTX-TmXXKQnpQOFfzk8q9-QQ-KYLDGFcHxwj-WGUHSL00s03dOtUC0slOrjZS5aCxMd_TVdFCUamclykc38rM8X2AK9gTSfnamiOxrkr5h2pE3yDtKUI_lTWDaYn5aCXU3SbwKS9XWxZozWg733hHZ-Xtka7a6i0b2Ham3iY1IByQH3LYWTTe75SwtmTnFyhI9z6Sx0qb0N2ZSZ5BehqRqvrS5XDhffDO3T3If9SZo9e-ZYT3FEl5CuAJgYkMzB29JfS1xVnGm4E-IwyrOXYd0ySkK2eVRant8AQwvL1-xV8G6ZinMYA\"\n" +
                 "}");
     }
 }
