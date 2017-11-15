@@ -194,7 +194,7 @@ public class BotController {
                 "}");
     }
 
-    @PostMapping(value = "/botframework.com/oauth2/v2.0/token", consumes = "multipart/x-www-form-urlencoded", produces = "application/json")
+    @PostMapping(value = "/botframework.com/oauth2/v2.0/token", consumes = "application/x-www-form-urlencoded", produces = "application/json")
     public ResponseEntity getToken() {
         log.info("Inside getToken method");
         return ResponseEntity.ok("{\n" +
